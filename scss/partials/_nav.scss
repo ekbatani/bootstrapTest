@@ -1,0 +1,32 @@
+.navbar{
+    background: #7b379d;
+
+    .navbar-brand{
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: $font-bold;
+        padding-top: 0.5rem;
+
+        @include responsive(xs){
+            font-size: 1.4rem;
+        }
+    }
+
+    .navbar-toggler {
+        color: white;
+        border: 0;
+      }     
+
+    .navbar-nav .nav-link{
+        color: #fff;
+        font-weight: $font-light;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        @include border-radius(4px);
+
+        &:hover{
+            background: #fff;
+            color: $color-purple;
+        }
+    }
+}
